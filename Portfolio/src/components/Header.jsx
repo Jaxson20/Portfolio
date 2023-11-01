@@ -1,13 +1,12 @@
 import React from 'react';
-import Navigation from './navigation';
 
-function header() {
+
+function Header() {
     return (
         <header>
             <h1>Jaxson Fellhauer</h1>
-            <navigation />
         </header>
     );
 }
 
-export default header;
+export default Header;

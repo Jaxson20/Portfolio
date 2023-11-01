@@ -5,7 +5,7 @@ function AboutMe() {
     <section>
       <h2>About Me</h2>
       <img src="avatar.jpg" alt="Your Photo" />
-      <p>Your short bio goes here...</p>
+      <p>THis IS MY BIO</p>
     </section>
   );
 }

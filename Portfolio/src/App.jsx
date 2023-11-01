@@ -1,25 +1,27 @@
-// src/App.jsx
-
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from './components/header';
-import AboutMe from './components/aboutme';
-import Portfolio from './components/portfolio';
-import Contact from './components/contact';
-import Resume from './components/resume';
-import Footer from './components/footer';
-import Navigation from './components/navigation'; // Import the Navigation component
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import AboutMe from './components/AboutMe';  
+import Portfolio from './components/Portfolio';  
+import Contact from './components/Contact'; 
+import Resume from './components/Resume';  
+import Footer from './components/Footer';  
+import Navigation from './components/Navigation';  
 
 const App = () => {
   return (
     <Router>
       <div className="App">
         <Header />
-        <Navigation /> {/* Use the Navigation component */}
-        <Route path="/about-me" component={AboutMe} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
+        <Navigation />
+        <Routes>
+  <Route path="/AboutMe" element={<AboutMe />} />
+  <Route path="/Portfolio" element={<Portfolio />} />
+  <Route path="/Contact" element={<Contact />} />
+  <Route path="/Resume" element={<Resume />} />
+</Routes>
+
+
         <Footer />
       </div>
     </Router>
@@ -27,4 +29,5 @@ const App = () => {
 };
 
 export default App;
+
 
