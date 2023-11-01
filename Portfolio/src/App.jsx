@@ -1,35 +1,21 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+// src/App.jsx
 
-import Header from './componets/header';
-import AboutMe from './componets/aboutme';
-import Portfolio from './componets/portfolio';
-import Contact from './componets/contact';
-import Resume from './componets/resume';
-import Footer from './componets/footer';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from './components/header';
+import AboutMe from './components/aboutme';
+import Portfolio from './components/portfolio';
+import Contact from './components/contact';
+import Resume from './components/resume';
+import Footer from './components/footer';
+import Navigation from './components/navigation'; // Import the Navigation component
 
 const App = () => {
   return (
     <Router>
       <div className="App">
         <Header />
-        <nav>
-          <ul>
-            <li>
-              <Link to="/about-me">About Me</Link>
-            </li>
-            <li>
-              <Link to="/portfolio">Portfolio</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link to="/resume">Resume</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navigation /> {/* Use the Navigation component */}
         <Route path="/about-me" component={AboutMe} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} />
