@@ -4,7 +4,17 @@ const Resume = () => {
   return (
     <div>
       <h2>Resume</h2>
-      <p>Put your resume content here, such as your skills, work experience, and education.</p>
+      <ul>
+        <li>
+        Wallgreens (May 2021 - May2021)
+        </li>
+        <li>
+          Quality Cuts (May 2022 - August 2022)
+          </li>
+          <li>
+          Creekmoor Clubhouse (febuary 2023 - Current)
+          </li>
+      </ul>
     </div>
   );
 };

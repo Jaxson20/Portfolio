@@ -1,21 +1,21 @@
 import React from 'react';
-import Project from './project'; 
+import Project from './Project'; 
 
 const Portfolio = () => {
   const projects = [
     {
-      title: 'Project 1',
-      description: 'Description of Project 1.',
-      image: 'project1-image.jpg', 
-      deployedLink: 'https://example.com/project1',
-      githubLink: 'https://github.com/yourusername/project1',
+      title: 'Gamers Grind',
+      description: 'This webpage is for a group of gamers to be able to help set up a time to game together. The calendar helps to organize events and there is a highlights page to share cool gaming moments or to rub a match win to your friend who lost.',
+      image: 'https://1drv.ms/i/s!AjsvYdlJ0aVdhjELpatXzZ2mDTTd?e=cBdGIb', 
+      deployedLink: 'https://gamers-grind-255d50ab80c3.herokuapp.com/',
+      githubLink: 'https://github.com/noahsimcoe/Gamers-Grind.git',
     },
     {
-      title: 'Project 2',
-      description: 'Description of Project 2.',
-      image: 'project2-image.jpg', 
-      deployedLink: 'https://example.com/project2',
-      githubLink: 'https://github.com/yourusername/project2',
+      title: 'Map-Stats',
+      description: 'In this project as a team we used APIs to create a stats sharing website primarily for Baseball/Football Teams. The website had young adults in mind that need to see seasonal history for teams they may want to (bet on/create fantasy teams).',
+      image: 'https://user-images.githubusercontent.com/133932050/257691412-3910d1b1-abe3-4507-9378-f81ddd2be2f3.png',
+      deployedLink: 'https://brycehadl.github.io/Map-stats/',
+      githubLink: 'https://github.com/brycehadl/Map-stats.git',
     },
   ];
 
